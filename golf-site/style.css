@@ -1,0 +1,1562 @@
+  /*
+Theme Name: Ekornes Child Golf
+Theme URI: http://www.templatemela.com
+Template:     ekornes
+Author: Ankur
+Author URI: http://www.templatemela.com/
+Description: TemplateMela Theme based on Default Wordpress Theme
+Version: 1.0
+License: Commercial
+License URI: http://www.templatemela.com/license
+Tags: orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: templatemela
+*/
+
+@import url("../ekornes/style.css");
+
+/*********************************Page Category page************************************/
+.columns-4 .products_block ul.products li{
+padding-left: 15px;
+}
+
+.products_block ul.products li {
+background:none;
+}
+
+.products_block ul.products li .product-block{
+border: 0px;
+}
+
+ul.products li.product h3 {
+font-size: 12px;
+}
+
+.shop_default_width {
+    width: 185px;
+}
+/*********************************Page Category page************************************/
+.tm-homeaccord{ 
+	width:700px; height:auto;
+	float: left;
+	border: 1px solid #E0E0E0;
+	border-radius: 8px;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+	}
+
+	
+.tm-accordcontainer{ 
+	width: 700px;
+height: auto;
+float: left;
+	
+	}
+	
+.products_block ul.products li .block_hover  {
+display:none;
+}
+
+
+.specification_information_tab {
+margin-left: 2px;
+margin-right: 2px !important;
+}
+
+.additional_information_tab {
+margin-right: 2px !important;
+}
+
+.welcome_tab {
+margin-right: 2px !important;
+}
+
+.features_tab {
+margin-right: 2px !important;
+}
+
+.shipping_tab {
+margin-right: 2px !important;
+}
+
+
+.warranty_tab	 {
+margin-right: 2px !important;
+}
+
+
+.product_Icon_buttons{
+float: left;
+padding: 0px;
+width: 100%;
+background: white;
+border: 1px solid #C2AB95;
+margin-top: 2em;
+}
+
+.product_Icon_buttons span{
+display: block;
+float: left;
+height: auto;
+/* margin-top: 12px; */
+margin-right: 8.7%;
+width: 10%;
+margin-bottom: 1%;
+}
+
+.product_Icon_buttons img{
+max-width: 100%;
+overflow: hidden;
+}
+
+.shipping-time {
+position: relative;
+background: #FFF;
+padding: 2em 3em;
+width: auto;
+margin: 20px auto;
+max-width: 400px;
+}
+
+.shipping-time h3 {
+text-align: center;
+width: 100%;
+font-family: Georgia, "Times New Roman", Times, serif;
+border-bottom: 1px solid #8B933E;
+color: #8B933E;
+font-size: 20px;
+font-weight: normal;
+text-align: center;
+}
+
+.Golf-Image img {
+    padding-top: 8px;
+}
+
+.ShipCanda img{
+    margin-top: 8px;
+}
+
+.USAFlag img{
+    margin-top: 1px;
+}
+
+.col2-set .col-1, .col2-set .col-2 {
+border: 1px solid #C2AB95 !important;
+margin: 20px 0;
+padding: 10px;
+width: 47%;
+background-color: white;
+}
+
+form .form-row input.input-text, #content .form-row input.input-text, form .form-row textarea, #content .form-row textarea {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: 1px solid #C2AB95;
+width: 100%;
+padding: 6px;
+margin: 0;
+outline: 0;
+background: #fff none;
+font-size: 14px;
+line-height: 1em;
+}
+
+.col-1 h3, .col-2 h3 {
+background: none repeat scroll 0 0 #E5DFC5;
+color: #6B3232	;
+padding: 8px;
+margin: -10px -10px 10px;
+float: none;
+}
+
+.woocommerce-info, .jigoshop .info {
+border-top: 3px solid #C2AB95;
+border-right: 1px solid #C2AB95;
+background: white;
+border-bottom: 1px solid #C2AB95;
+border-left: 1px solid #C2AB95;
+}
+
+.woocommerce-error {
+border-top: 3px solid #C2AB95;
+border-right: 1px solid #C2AB95;
+background: white;
+border-bottom: 1px solid #C2AB95;
+border-left: 1px solid #C2AB95;
+}
+
+.woocommerce-error:before, .jigoshop_error:before {
+background-color: #C2AB95;
+}
+
+.woocommerce-info:before, .jigoshop .info:before {
+background-color: #C2AB95;
+content: "i";
+font-family: Times, Georgia, serif;
+font-style: italic;
+}
+
+.col2-set .col-1, .col2-set .col-2 {
+border: 1px solid #D1D1CF;
+margin: 20px 0;
+padding: 10px;
+width: 47%;
+background-color: white;
+}
+
+table.shop_table {
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+background: none repeat scroll 0 0 white;
+border-top: 0px solid #C2AB95;
+border-bottom: 1px solid #C2AB95;
+border-left: 1px solid #C2AB95;
+border-right: 0px solid #C2AB95;
+border-collapse: separate;
+border-radius: 0px; 
+margin: 0 -1px 24px 0;
+overflow: auto;
+text-align: left;
+width: 100%;
+}
+
+table.shop_table td {
+border-right: 1px solid #C2AB95;
+border-top: 1px solid #C2AB95;
+}
+
+table.shop_table th {
+background: none repeat scroll 0 0 #E5DFC5;
+color: #6B3232;
+border-top: 1px solid #C2AB95;
+border-right: 1px solid #C2AB95;
+border-left: 0px solid #C2AB95;
+}
+
+#payment ul.payment_methods {
+overflow: hidden;
+zoom: 1;
+text-align: left;
+padding: 1em;
+border-bottom: 1px solid #C2AB95;
+margin: 0!important;
+list-style: none outside;
+}
+
+.chosen-container-single .chosen-single {
+border: 1px solid #C2AB95;
+}
+
+#payment #place_order {
+border: 1px solid #C2AB95;
+}
+
+#payment {
+background: white;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: 1px solid #C2AB95;
+}
+
+#payment div.payment_box {
+position: relative;
+width: 96%;
+background: #E5DFC5;
+border: 1px solid #C2AB95;
+box-shadow: inset 0 1px 1px rgba(255,255,255,.5) #888;
+-webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,.5) #888;
+-moz-box-shadow: inset 0 1px 1px rgba(255,255,255,.5) #888;
+padding: 1em 2% 0;
+margin: 1em 0 1em 0;
+font-size: .92em;
+color: #6B3232;
+}
+
+.cart-collaterals .cart_totals table {
+border-bottom: 1px solid #C2AB95;
+border-left: 1px solid #C2AB95;
+border-top: 1px solid #C2AB95;
+width: 100%;
+margin: 10px 0 6px;
+background-color: white;
+}
+
+.cart-collaterals .cart_totals tr td,.cart-collaterals .cart_totals tr th {
+border-right: 1px solid #C2AB95;
+font-size: 12px;
+vertical-align: top;
+color: #959B8F;
+border-top: 1px solid #C2AB95;
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1020px) {
+.tm-homeaccord	{ 
+	width:74%;
+	height:auto;
+	border: 1px solid #E0E0E0;
+	}
+
+	.tm-accordcontainer{ 
+		width:74%;
+	height:auto;
+	}
+.cms_banner2	{ margin:0 40px;}
+}
+
+@media only screen and (max-width: 999px){
+.tm-homeaccord	{ 
+	width:74%;
+	height:auto;
+	border: 1px solid #E0E0E0;
+	}
+	
+		.tm-accordcontainer{ 
+		width:74%;
+	height:auto;
+	}
+.cms_banner2	{ margin:0 34px;}
+}
+
+@media (max-width: 767px) {
+.tm-homeaccord{ 
+	width:100%;
+	height:auto;
+}
+	.tm-accordcontainer{ 
+		width:100%;
+	}
+	
+.cms_banner1,.cms_banner2,.cms_banner3{ width:32%;}
+.cms_banner2 { margin:0 8px;}
+
+.specification_information_tab {
+margin-left: 0px;
+margin-right: 0px !important;
+}	
+
+.additional_information_tab {
+margin-right: 0px !important;
+}
+
+.welcome_tab {
+margin-right: 0px !important;
+}
+
+.features_tab {
+margin-right: 0px !important;
+}
+
+.shipping_tab {
+margin-right: 0px !important;
+}
+
+
+.warranty_tab	 {
+margin-right: 0px !important;
+}
+
+.ShipCanda img {
+    margin-top: 1px;
+}
+
+.Golf-Image img {
+    padding-top: 15px;
+}
+
+}
+
+
+@media only screen and (max-width: 479px) {
+.tm-homeaccord	{ margin:0;
+height:auto;}
+
+	.tm-accordcontainer{ 
+		margin:0;
+	}
+.cms_banner2 { margin:0 4px;}
+}
+
+.ui-accordion .ui-accordion-header {
+    margin: 0px 0px 10px;
+    padding: 10px 0px 10px 35px;
+    line-height: 20px;
+    text-decoration: none;
+    
+    display: block;
+    position: relative;
+	cursor: pointer;
+	text-transform: uppercase;
+font-size: 13px;
+}
+
+.ui-accordion:hover, .ui-accordion-header :hover {
+    background: url('../images/dropdown_hover.jpg') repeat scroll 0px 0px transparent;
+    color: #3C3C3C;
+}
+
+.togg .tog:hover, .accordion .tog:hover, .tour li a:hover {
+
+}
+
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.ui-state-active {
+border: 0px;
+color: #fff;
+background: url('images/menu_bg.png') repeat scroll center bottom #333;
+}
+
+.ui-state-default {
+
+}
+.ui-accordion .ui-accordion-content {
+background: none repeat scroll 0% 0% #FFF;
+border-radius: 8px;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+margin: 10px 0px;
+padding: 15px;
+position: relative;
+border: 1px solid #E0E0E0;
+height:auto;
+}
+
+.ui-widget-content{
+color: #717171;
+}
+
+.home-topbanner #banner2 {
+    margin-top: 18px;
+	border: 1px solid #D3D3D3;
+}
+.home-topbanner #banner3 {
+    margin-top: 18px;
+}
+
+.Subscribe_Block{
+margin-top: 18px;
+width:294px;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+border-top-right-radius: 4px;
+border-top-left-radius: 4px;
+border: 1px solid #d3d3d3;
+}
+
+.products_block h3.widget-title {
+border-top: 3px solid #E1E1E1;
+padding-top: 10px;
+}	
+
+.header_cart {
+display:none;
+}
+
+.cmsblock_content{
+background: none repeat scroll 0px 0px #E5DFC5;
+padding: 15px 0px 30px;
+}
+
+.header-top{
+width: 100%;
+}
+
+.site-header .home-link{
+width: 100%;
+}
+
+.site-header .contact-header-menu {
+margin: 0px 0px 0px;
+}
+
+.home_cmsblock_top {
+text-align: left;
+}
+
+.featured_product_banner1	{ float:left; margin-top: 10px;}
+.featured_product_banner2	{ float:left; margin:0 25px; margin-top: 10px;}
+.featured_product_banner3	{ float:left; margin-right: 25px; margin-top: 10px;}
+.featured_product_banner4	{ float:left; margin-top: 10px;}
+.home_cmsblock_bottom img:hover { opacity:0.7;transition-duration:300ms}
+
+
+.cms_banner1 {
+margin-left: 3%;
+}
+
+.cms_banner2 {
+margin: 0px 29px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+.featured_product_banner1,.featured_product_banner2,.featured_product_banner3,.featured_product_banner4 { width:22.4%;}
+.cms_banner1,.cms_banner2,.cms_banner3 {width:28%;}
+.cms_banner1 {margin-left: 5%;}
+.featured_product_banner1 ,.featured_product_banner2, .featured_product_banner3 ,.featured_product_banner4 {margin-left: 16px;}
+.featured_product_banner2 , .featured_product_banner3{margin-right: 0px; }
+
+.USAFlag img {
+    margin-top: 0px;
+}
+}
+
+@media (max-width: 767px) {
+.tm-homeaccord{ 
+	width:100%;
+	height:auto;
+}
+	.tm-accordcontainer{ 
+		width:100%;
+	}
+	
+.featured_product_banner1,.featured_product_banner2,.featured_product_banner3,.featured_product_banner4 { width:23.7%;}
+.featured_product_banner2 { margin:0 8px;}	
+.featured_product_banner3 { margin:0 0px;}	
+.cms_banner1,.cms_banner2,.cms_banner3 {width:27%;}
+.cms_banner1 {margin-left: 5%;}
+}
+
+
+
+@media (min-width: 580px) and (max-width: 767px) {	
+.featured_product_banner1,.featured_product_banner2,.featured_product_banner3,.featured_product_banner4 { width:23.5%;}
+.featured_product_banner2,.featured_product_banner4 { margin:10px 7px;}	
+.featured_product_banner3 {margin-top: 10px;}
+.featured_product_banner1 {margin-left: 1%}
+.cms_banner1,.cms_banner2,.cms_banner3 {width:27%;}
+.cms_banner1 {margin-left: 5%;}
+
+
+.Golf-Image img {
+    padding-top: 17px;
+}
+}
+
+@media (min-width: 370px) and (max-width:579px ){
+.featured_product_banner1,.featured_product_banner2,.featured_product_banner3,.featured_product_banner4 { width:22.5%;}
+.featured_product_banner2,.featured_product_banner4 { margin:10px 8px;}	
+.featured_product_banner3 {margin-top: 10px;}
+.cms_banner1,.cms_banner2,.cms_banner3 {width:27%;}
+.cms_banner1 {margin-left: 2%;}
+}
+
+@media (min-width:369px ) and (max-width: 380px){
+.featured_product_banner1, .featured_product_banner2, .featured_product_banner3 ,.featured_product_banner4 { width:100%; margin-left: 18%;}
+.cms_banner1,.cms_banner2,.cms_banner3 {width:100%;margin: 5px 20px 5px;}
+
+.Golf-Image img {
+    padding-top: 12px;
+}
+}
+
+@media (min-width: 321px) and (max-width:369px ){
+.featured_product_banner1, .featured_product_banner2, .featured_product_banner3 ,.featured_product_banner4 { width:100%; margin-left: 15%;
+margin-bottom: 5px;
+margin-top: 0px;
+}
+.cms_banner1,.cms_banner2,.cms_banner3 {width:100%;margin: 5px 20px 5px;}
+}
+
+
+@media (max-width: 320px){
+.featured_product_banner1, .featured_product_banner2, .featured_product_banner3 ,.featured_product_banner4 { width:100%; margin-left: 11%;
+margin-bottom: 5px;
+margin-top: 0px;
+}
+.cms_banner1,.cms_banner2,.cms_banner3 {width:100%;margin: 5px 1px 5px;}
+
+.Golf-Image img {
+    padding-top: 9.5px;
+}
+
+.USAFlag img {
+    margin-top: 2px;
+}
+.product_Icon_buttons span {
+    margin-bottom: 2%;
+	}
+}
+
+
+.products_block h3.filler{
+padding-top: 5px;
+}
+
+.header_contactus{
+color: #717171;
+background: none;
+}
+
+.header_contactus span {
+color: #903537;
+font-weight: bold;
+}
+
+.header-main .search-form, .header-main #searchform{
+position: relative;
+top: 0px;
+left: 0px;
+border-radius: 5px;
+padding: 5px;
+text-align: right;
+width: 240px;
+position: relative;
+display: inline-block;
+}
+
+.search-field, #searchform input[type="text"]{
+float: none;
+width: 180px;
+margin-right: 20px;
+padding: 2.5px;
+}
+
+.search-form .search-submit, #searchform #searchsubmit {
+float: right;
+}
+
+.search-form, #searchform {
+    background: none;
+	width: 201;
+}
+
+.search-form .search-submit, #searchform #searchsubmit {
+background: url("images/search_bg.jpg") no-repeat !important;
+top: 5px;
+margin: 0px;
+height: 25px;
+border: 2px solid grey;
+}
+
+.subscribe{
+float: right;
+margin-bottom: -55px;
+}
+
+.subscribe input[type="submit"]{
+margin-bottom: 2px;
+padding: 5px;
+border: 1px solid #717171;
+background-color: #717171;
+}
+
+.s2_message {
+background: none repeat scroll 0px 0px transparent; 
+border-radius: 0px; 
+border-bottom: medium none; 
+list-style: none outside none; 
+clear: both; 
+padding: 20px 15px; 
+font-family: "Ubuntu",Arial,Helvetica,sans-serif; 
+font-size: 11px; 
+text-decoration: none;
+}
+
+.subscribe form {
+margin-top: -5px;
+}	
+
+.top-area-inner .woocommerce-tabs{
+padding-top: 10px;
+padding-bottom: 15px;
+}
+
+.subscribetext{
+font-size: 13px;
+float: right;
+margin-top: -18px;
+}
+
+.woocommerce-tabs .panel 
+{
+background:white;
+border-left: 1px solid #C2AB95;
+border-right: 1px solid #C2AB95;
+border-bottom: 1px solid #C2AB95;
+border-top: medium none #FFF;
+}
+
+ul.tabs li.active a{
+border-style: solid;
+border-color: #C2AB95 #C2AB95 #FFF;
+border-image: none;
+-moz-border-top-colors: none;
+-moz-border-right-colors: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+background: none repeat scroll 0% 0% #FFF;
+border-width: 1px;
+z-index: 9999;
+margin-bottom: -2px;
+}
+
+
+ul.tabs li a {
+background: none repeat scroll 0px 0px #E5DFC5;
+color: #6B3232;
+}
+
+ul.tabs li {
+margin-right: 0px;
+}
+
+ul.tabs li:hover a{
+background: white;
+}
+
+.home_cmsblock_subtitle {
+display:none;
+}
+
+
+.widget_woothemes_testimonials{
+display: block;
+clear: both;
+margin: 0px;
+}
+
+blockquote:before {
+    content: "";
+    content: none;
+top: 0.6em;
+left: 10px;
+font-size: 1.5em;
+font-family: "FontAwesome";
+font-style: normal;
+content: "\f10d";
+color: #E5DFC5;
+position: absolute;
+}
+
+blockquote{
+background: none;
+margin: 0px;
+padding: 10px 20px 10px 50px;
+position: relative;
+white-space: pre-wrap;
+line-height: 20px;
+font-size: 14px;
+font-style: italic ;
+font-weight: 500;
+}
+
+.testimonials-list .quote{
+margin-bottom: 20px;
+}
+
+.widget_woothemes_testimonials blockquote p {
+    font-style: italic !important;
+}
+
+.Custom-Head{
+width: auto;
+padding-bottom: 18px;
+padding-top: 25px;
+}
+
+.Custom-Head img {
+margin-top: -20px;
+}
+
+.Custom-Head .subscribe{
+margin-bottom: -25px;
+}
+
+.Custom-Head  .s2_message {
+padding: 0px 0px;
+}
+
+.body_leftcallout #tertiary{
+margin-top: 10px;
+}
+
+.faqs-page .full-width{
+padding-top: 50px;
+}
+
+.footer-banner img {
+max-width:100%;
+overflow: hidden;
+padding: 25px 0px 10px;
+clear: both;
+}
+
+.products li .onsale {
+display:none;
+}
+
+.products li a.button {
+display:none;
+}
+
+.body_leftcallout #primary, .woocommerce-page.body_leftcallout #primary {
+margin-top:10px;
+}
+
+.shop-page .body_leftcallout #primary, .woocommerce-page.body_leftcallout #primary {
+margin-top:0px;
+}
+
+.content-main #primary #content {
+    background: none;
+    padding: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.homepage #primary #content {
+background: none;
+padding: 0;
+overflow: visible;
+border-width: none;
+border-style: none;
+border-color: none;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"], 
+a.forgot,
+a.button,
+button.button,
+input.button,
+#review_form #submit, 
+.lost_password, 
+.input-submit, 
+.forgot, 
+input[type=submit],
+a.button-alt {
+border: 1px solid #E5DFC5;
+color: #6B3232!important;
+background-color: #E5DFC5;
+}	
+
+.subscribe input[type="submit"]{
+border: 1px solid #E5DFC5;
+color: #6B3232!important;
+background-color: #E5DFC5;
+}
+
+.quantity input.plus, 
+.quantity input.minus {
+    background: none repeat scroll 0 0 #E5DFC5;
+}
+
+
+button:hover, button:focus, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, a.button:hover, button.button:hover, input.button:hover, #review_form #submit:hover, .lost_password:hover, .input-submit:hover, .forgot:hover, input[type="submit"]:hover, ul.products li a.add_to_cart_button:hover {
+background: none repeat scroll 0% 0% #C2AB95;
+border: 1px solid #C2AB95;
+}
+
+.comment-respond {
+border: 1px solid #E5DFC5;
+background-color: #E5DFC5;
+}
+
+#review_form #submit{
+background: none repeat scroll 0% 0% #C2AB95; !important;
+border: 1px solid #C2AB95; !important;
+}
+
+p.stars span a:hover, p.stars span a:focus {
+    background: url('images/star.png') repeat-x scroll left -16px transparent;
+}
+
+p.stars span {
+background: url('images/star.png') repeat-x scroll left 0px transparent;}
+
+.sidebar-container .widget .widget-title, .widget-area .widget .widget-title, .secondary-sidebar .widget .widget-title, .sidebar-container .widget .widget-title, .widget-area .widget .widget-title, .secondary-sidebar .widget .widget-title, #tertiary .widget .widget-title {
+    border: 1px solid #E5DFC5;
+    color: #6B3232 !important;
+    background-color: #E5DFC5;
+}
+
+.product-block .image-block {
+cursor: inherit;
+}
+
+.entry-content {
+  text-align: justify;
+}
+
+.breadcrumbs {
+margin-bottom: 0px;
+}
+
+.faqs-page .breadcrumbs{
+padding-top: 30px;
+padding-left: 3px;
+}
+
+.faqs-page #primary #content {
+padding-left: 3px;
+padding-top: 10px;
+margin-top: 20px;
+}
+
+.cp_plus .vert_line, .cp_plus .horiz_line {
+background-color: #6B3232;
+}
+
+.cp_plus {
+background: none repeat scroll 0% 0% #C2AB95;
+border: 1px solid #C2AB95
+;}
+
+body {
+margin-top: -38px;
+}
+
+
+.table-responsive {
+display: block;
+visibility: visible;
+}
+
+table.easy-table caption {
+margin-top: 0px;
+margin-bottom: 0px;
+font-size: 14px;
+}
+
+.golf-price{
+margin-bottom: 5px;
+}
+
+.golf-total{
+float:left;
+font-weight: bold;
+}
+
+.golf-total-price{
+text-align: right;
+margin-left: auto;
+margin-right: 10%;
+display: block;
+font-weight: bold;
+}
+
+.golf-retail-price{
+text-align: right;
+margin-left: auto;
+margin-right: 10%;
+display: block;
+}
+
+.golf-price-container{
+width: 50%;
+float: left;
+height: 78px;
+}
+
+.golf-specs-container{
+width: 50%;
+float: right;
+background: url(images/productInfo_priceInfo_divider.jpg) left top repeat-y;
+margin-bottom: 10px;
+}
+
+.golf-specs-container  img{
+	margin-bottom: 11px;
+	margin-left: 5px;
+}
+
+.golf-addto-cart {
+margin-top: -5px !important;
+}
+
+.golf-addto-cart input{
+margin-left: auto;
+margin-right: auto;
+display: block;
+border: 0px;
+}
+
+.single form.cart div.quantity{
+display:none;
+}
+
+.product_meta .posted_in {
+display:none;
+}
+
+/* Full width changes*/
+.full-width .breadcrumbs{
+padding-top: 30px;
+}
+
+.full-width #content {
+padding-left: 3px;
+padding-top: 10px;
+margin-top: 20px;
+}
+/* ***/
+
+
+/*checkout page changes*/
+.golf-checkout-top-container{
+float: right;
+z-index: 20;
+position: relative;
+}
+
+.golf-checkout-top-container .golf-clear-cart{
+text-decoration: underline;
+margin-right: 10px;
+}
+
+.golf-checkout-top-container .golf-cart-continue img{
+margin-right: 10px;
+}
+
+.golf-checkout-top-container .golf-cart-continue img{
+margin-right: 10px;
+}
+
+.cart img {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+table.shop_table td a.button{
+float: left;
+margin: 0px 0px;
+margin-top: 10px;
+}
+
+table.shop_table th{
+text-align: left;
+}
+
+table.shop_table td{
+vertical-align: top;
+text-align: left;
+}
+
+.cart_item{
+line-height: 2;
+}
+
+.cart .golf-product-title{
+float: left;
+}
+
+.cart .golf-product-thumbnail{
+float: left;
+}
+
+.product-thumbnail .golf_title{
+line-height:1;
+padding-top: 6px;
+}
+
+.golf_product_name{
+background-color="#efefef";
+}
+
+.golf_quantity_price_table{
+line-height:1;
+}
+
+.golf_product_description{
+height: 20px;
+font-weight: bold;
+color: rgb(107, 50, 50);
+}
+
+table.golf_quantity_price_table{
+border:none;
+}
+
+table.golf_quantity_price_table td{
+border:none;
+}
+
+table.golf_quantity_price_table td b, strong{
+float:right;
+}
+
+tr.golf_product_name td.name{
+width:100%;
+}
+
+tr.golf_product_name div.quantity{
+min-width: 80px;
+}
+
+.cart-collaterals .cart_totals{
+width: 100%;
+}
+
+#shipping_method{
+list-style-type: none;
+}
+
+#shipping_cost {
+list-style-type: none;
+padding: 0px 0px 0px 0px;
+font-size: 14px;
+color: #717171;
+}
+
+#shipping_method .tm-radio{
+padding: 6px 2px;
+}
+
+.cart_totals .shipping_cost{
+width:13%;
+}
+
+.cart_totals .order-total td strong{
+float: left;
+font-size: 14px;
+color: #6B3232;
+}
+
+table.shop_table .product-subtotal{
+width:13%;
+}
+
+.cart_totals .order-total{
+background: none repeat scroll 0px 0px #E5DFC5;
+}
+
+.cart_totals .order-total th{
+color: #6B3232 !important;
+text-align: right;
+}
+
+.wc-proceed-to-checkout{
+float:right;
+}
+
+.entry-content .woocommerce{
+width: 88%;
+float: left;
+padding-right: 10px;
+}
+
+.golf-cart-sidebar{
+float: left;
+border: 1px solid #CCC;
+width: 12%
+}
+
+.golf-cart-sidebar img{
+padding: 20px 0px;
+}
+
+.return-customer{
+padding: 10px;
+font-size: 15px;
+font-weight: normal;
+background: none repeat scroll 0px 0px #E5DFC5;
+color: #6B3232;
+}
+
+form.login{
+padding-bottom: 30px;
+}
+
+.woocommerce-checkout .woocommerce{
+width:100%;
+}
+
+.woocommerce-checkout .col-2{
+padding-bottom: 30px;
+}
+
+.woocommerce-checkout .create-account{
+padding-top: 30px;
+}
+
+.woocommerce-checkout #order_review_heading{
+display:none;
+}
+
+.woocommerce-checkout .woocommerce-checkout-review-order-table{
+display:none;
+}
+
+.woocommerce-checkout .payment_methods{
+display:none;
+}
+
+.woocommerce-checkout .woocommerce-checkout-payment{
+margin-bottom: 0px !important;
+background: transparent !important;
+border: none !important;
+}
+
+.checkout #order_review{
+margin-bottom: 0px;
+}
+
+form .form-row input.input-text, #content .form-row input.input-text, form .form-row textarea, #content .form-row textarea{
+line-height: 1.5em;
+padding: 2px;
+}
+/*****************/
+
+
+@media only screen and (max-width:999px){
+.front-subscribe{
+float: left;
+	}
+	
+.front-subscribe .subscribe {
+float: none;
+margin-bottom: 0px;
+
+}
+.front-subscribe .subscribetext{
+float: none;
+margin-top: 0px;
+}
+	
+}
+
+
+@media only screen and (max-width:670px){
+.golf-page-subscribe{
+float: left;
+	}
+	
+.golf-page-subscribe .subscribe {
+float: none;
+
+}
+.golf-page-subscribe .subscribetext{
+float: none;
+}
+	
+}
+
+@media only screen and (max-width:315px){
+.golf-contact-image img{
+width: 98%;
+}
+
+@media only screen and (min-width:299px) and (max-width : 430px){
+.golf-price-container{
+width: 100%;
+float: none;
+}
+
+}
+
+.golf-specs-container{
+background: none;
+width: 100%;
+float: none;
+}
+
+.golf-specs-container img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+}
+
+.golf-retail-price {
+text-align: right;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+.golf-total-price{
+text-align: right;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+}
+/* START Make the cart table responsive */
+@media screen and (max-width: 600px) {
+.page-title{
+display:none;
+}
+
+.woocommerce-page .woocommerce-message{
+display:none;
+}
+
+.golf-cart-sidebar{
+display:none;
+}
+
+.entry-content .woocommerce{
+width: 100%;
+float: none;
+padding-right: 0px;
+}
+
+table.shop_table td a.button{
+margin: 7px;
+}
+
+.woocommerce-page table.shop_table .product-thumbnail{
+padding: 6px 0px;
+border-bottom-width: 0px;
+border-top-width: 1px;
+
+}
+
+table.shop_table .product-subtotal{
+width:100%;
+border-top-width: 0px !important;
+color: #6B3232;
+ background: none repeat scroll 0px 0px #E5DFC5;
+}
+
+table.shop_table .product-subtotal .amount{
+ float: right;
+}
+
+.woocommerce-page table.shop_table .actions .button{
+float: right;
+}
+
+.woocommerce-page table.shop_table tr.golf_product_description{
+display:none;
+}
+
+.woocommerce-page table.shop_table tr.golf_product_name .name{
+display:none;
+}
+
+.woocommerce-page table.shop_table tr.golf_product_name .sub-total{
+display:none;
+}
+
+.woocommerce-page table.shop_table tr.golf_product_name .quantity{
+padding:0px;
+margin:0px;
+float: right;
+border:0;
+}
+
+.woocommerce-page table.shop_table tr.golf_product_name .amount{
+display:none;
+}
+
+.woocommerce-page table.shop_table tr.golf_sub_total{
+display:none;
+}
+
+.woocommerce-page table.shop_table tr.golf_discounted_price{
+display:none;
+}
+
+.woocommerce-page table.shop_table td.product-price{
+padding-bottom: 6px;
+padding-top: 6px;
+padding-right: 10px;
+}
+
+.woocommerce-page table.shop_table.golf_quantity_price_table.cart{
+margin:0px;
+}
+
+.woocommerce-page table.shop_table.golf_quantity_price_table tbody{
+padding-top:0px;
+}
+
+.quantity input.qty{
+border: 1px solid #CCCCCC;
+margin-top: 0px;
+}
+
+.quantity input.plus, .quantity input.minus{
+margin-top: 0px;
+}
+
+#shipping_method{
+padding-left: 0px;
+margin:0px;
+}
+
+.woocommerce-page .golf-checkout-top-container .golf-clear-cart{
+display: block;
+margin-bottom: 20px;
+width: 60%;
+margin-left: auto;
+margin-right: auto;
+text-decoration: none;
+}
+
+.woocommerce-page .golf-checkout-top-container .golf-cart-continue img{
+margin-right: 26px;
+width: 45%;
+}
+
+.woocommerce-page .golf-checkout-top-container .golf-cart-checkout img{
+margin-right: 2px !important;
+width: 45%;
+}
+
+/* Force table to not be like tables anymore */
+.woocommerce-page table.shop_table, 
+.woocommerce-page table.shop_table thead, 
+.woocommerce-page table.shop_table tbody, 
+.woocommerce-page table.shop_table th, 
+.woocommerce-page table.shop_table td, 
+.woocommerce-page table.shop_table tr { 
+	display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+.woocommerce-page table.shop_table thead tr { 
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.woocommerce-page table.shop_table tr { 
+	/*border: 1px solid #d2d3d3; */
+}
+
+.woocommerce-page table.shop_table td { 
+	/* Behave  like a "row" */
+	border: 1px solid #d2d3d3; 
+	position: relative;
+	padding-left: 0% !important; 
+}
+
+.woocommerce-page table.shop_table {
+	border: none;
+}
+
+.woocommerce-page table.shop_table td.product-spacer {
+	border-color: #FFF;
+	height: 10px;
+}
+
+.woocommerce-page table.shop_table td:before { 
+	/* Now like a table header */
+	position: absolute;
+	/* Top/left values mimic padding */
+	top: 6px;
+	left: 6px;
+	width: 45%; 
+	padding-right: 10px; 
+	white-space: nowrap;
+}
+
+/*
+Label the data
+*/
+.woocommerce-page table.shop_table td.product-price:before {
+	content: "QUANTITY";
+}
+
+.woocommerce-page table.shop_table td.product-remove:before {
+	content: "DELETE";
+}
+
+.woocommerce-page table.shop_table td.product-name:before {
+	content: "PRODUCT";
+}
+
+.woocommerce-page table.shop_table td.product-quantity:before {
+	content: "QUANTITY";
+}
+
+.woocommerce-page table.shop_table td.product-subtotal:before {
+	content: "SUBTOTAL";
+}
+
+.woocommerce-page table.shop_table td.product-total:before {
+	content: "TOTAL";
+}
+
+.woocommerce .quantity, 
+.woocommerce #content .quantity, 
+.woocommerce-page .quantity, 
+.woocommerce-page #content .quantity {
+	margin: 0;
+}
+
+.woocommerce-page table.cart td.actions, 
+.woocommerce-page #content table.cart td.actions {
+	text-align: left;
+	border:0;
+	padding-left: 6px !important;
+}
+
+.woocommerce-page table.cart td.actions .button.alt, 
+.woocommerce-page #content table.cart td.actions .button.alt {
+	float: left;
+	margin-top: 10px;
+}
+
+.woocommerce-page table.cart td.actions div, 
+.woocommerce-page #content table.cart td.actions div,
+.woocommerce-page table.cart td.actions input, 
+.woocommerce-page #content table.cart td.actions input {
+	margin-bottom: 10px;
+}
+
+.woocommerce-page .cart-collaterals .cart_totals {
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+
+.woocommerce-page .cart-collaterals .cart_totals th, 
+.woocommerce-page .cart-collaterals .cart_totals td {
+	border:0 !important;
+}
+
+.woocommerce-page .cart-collaterals .cart_totals table tr.cart-subtotal td,
+.woocommerce-page .cart-collaterals .cart_totals table tr.shipping td,
+.woocommerce-page .cart-collaterals .cart_totals table tr.total td {
+	padding-left: 6px !important;
+}
+
+.woocommerce-page table.shop_table tr.cart-subtotal td,
+.woocommerce-page table.shop_table tr.shipping td,
+.woocommerce-page table.shop_table tr.total td,
+.woocommerce-page table.shop_table.order_details tfoot th,
+.woocommerce-page table.shop_table.order_details tfoot td {
+	padding-left: 6px !important;
+	border:0 !important;
+}
+
+.woocommerce-page table.shop_table tbody {
+	padding-top: 10px;
+}
+
+.woocommerce .col2-set .col-1, 
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2, 
+.woocommerce-page .col2-set .col-2,
+.woocommerce form .form-row-first, 
+.woocommerce form .form-row-last, 
+.woocommerce-page form .form-row-first, 
+.woocommerce-page form .form-row-last {
+	float: none;
+	width: 100%;
+}
+
+.woocommerce .order_details ul, 
+.woocommerce-page .order_details ul,
+.woocommerce .order_details, 
+.woocommerce-page .order_details {
+	padding:0;
+}
+
+.woocommerce .order_details li, 
+.woocommerce-page .order_details li {
+	clear: left;
+	margin-bottom: 10px;
+	border:0;
+}
+}
