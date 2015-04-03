@@ -14,6 +14,40 @@ Text Domain: templatemela
 
 @import url("../ekornes/style.css");
 
+table.shop_table{
+padding-top: 0px;
+padding-right: 0px;
+padding-left: 0px;
+padding-bottom: 0px;
+}
+
+div.golf-credit-card-review-order .woocommerce-checkout-review-order-table{
+display: table;
+}
+
+h3.golf-credit-card-review-order{
+display: table !important;
+margin-top: 10px; 
+margin-bottom: 10px;
+}
+
+div.golf-credit-card-review-order tr.shipping h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #6B3232;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+div.golf-credit-card-review-order tr.order-total td b, strong{
+float:none !important;
+}
+
+div.golf-credit-card-review-order #payment div.form-row{
+padding:0px
+}
+
 /*********************************Page Category page************************************/
 .columns-4 .products_block ul.products li{
 padding-left: 15px;
@@ -169,6 +203,12 @@ margin: -10px -10px 10px;
 float: none;
 }
 
+.col-1 h3 {
+margin-top: 0px;
+margin-left: -8px;
+margin-right: -9px;
+}
+
 .woocommerce-info, .jigoshop .info {
 border-top: 3px solid #C2AB95;
 border-right: 1px solid #C2AB95;
@@ -200,7 +240,7 @@ font-style: italic;
 border: 1px solid #D1D1CF;
 margin: 20px 0;
 padding: 10px;
-width: 47%;
+width: 48%;
 background-color: white;
 }
 
@@ -261,7 +301,7 @@ border: 1px solid #C2AB95;
 
 #payment div.payment_box {
 position: relative;
-width: 96%;
+width: 100%;
 background: #E5DFC5;
 border: 1px solid #C2AB95;
 box-shadow: inset 0 1px 1px rgba(255,255,255,.5) #888;
@@ -502,6 +542,10 @@ margin: 0px 29px;
 .USAFlag img {
     margin-top: 0px;
 }
+
+div.cart_totals  .golf-clear-cart{
+display:none;
+}
 }
 
 @media (max-width: 767px) {
@@ -534,6 +578,20 @@ margin: 0px 29px;
 .Golf-Image img {
     padding-top: 17px;
 }
+
+div.cart_totals  .golf-clear-cart{
+display:none;
+}
+
+.golf-cart-sidebar{
+display:none;
+}
+
+.entry-content .woocommerce{
+width:100% !important;
+  padding-right: 0px !important;
+}
+
 }
 
 @media (min-width: 370px) and (max-width:579px ){
@@ -1172,8 +1230,74 @@ width:100%;
 padding-bottom: 30px;
 }
 
+
+
 .woocommerce-checkout .create-account{
 padding-top: 30px;
+}
+
+.woocommerce-checkout .golf-credit-card{
+ border: 1px solid #C2AB95;
+margin: 0px 2px;
+padding: 0.35em 0.625em 0.75em;
+padding-top: 0px;
+margin-bottom: 30px;
+}
+
+form.login.golf-credit-card{
+width:48%;
+float:right;
+margin-bottom: 41px;
+}
+
+
+form.login.golf-credit-card h3{
+  background: none repeat scroll 0 0 #E5DFC5;
+  color: #6B3232;
+  padding: 8px;
+  margin: -10px -10px 10px;
+  float: none;
+  margin-top: 0px;
+  margin-left: -8px;
+  margin-right: -9px;
+}
+
+div.create-account.golf-credit-card{
+width:48%;
+float: left;
+padding-bottom: 23px;
+margin-bottom: 40px;
+}
+
+.checkout{
+margin-top: -20px;
+}
+
+div.create-account.golf-credit-card h3{
+  background: none repeat scroll 0 0 #E5DFC5;
+  color: #6B3232;
+  padding: 8px;
+  margin: -10px -10px 10px;
+  float: none;
+	  margin-top: 0px;
+	  margin-left: -8px;
+	  margin-right: -9px;
+}
+
+div.col-2.golf-credit-card{
+padding-top: 10px;
+padding-left: 0px;
+  padding-right: 0px;
+}
+
+div.col-2.golf-credit-card #ship-to-different-address{
+width:auto;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+div.create-account.golf-credit-card .clear{
+display:none;
 }
 
 .woocommerce-checkout #order_review_heading{
@@ -1226,6 +1350,7 @@ margin-top: 0px;
 @media only screen and (max-width:670px){
 .golf-page-subscribe{
 float: left;
+  width: 100%;
 	}
 	
 .golf-page-subscribe .subscribe {
@@ -1279,9 +1404,38 @@ display: block;
 }
 }
 /* START Make the cart table responsive */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
 .page-title{
 display:none;
+}
+
+div.golf-credit-card-review-order table.shop_table td.product-name::before{
+display:none;
+}
+
+div.golf-credit-card-review-order table.shop_table td.product-total::before{
+left: 0px;
+}
+
+div.golf-credit-card-review-order table.shop_table td.product-total .amount{
+float:right;
+}
+
+div.golf-credit-card-review-order table.shop_table  tfoot{
+display:table;
+width:100%;
+}
+
+.checkout{
+margin-top: 0px;
+}
+
+div.create-account.golf-credit-card{
+width:100%;
+}
+
+form.login.golf-credit-card{
+width:100%;
 }
 
 .woocommerce-page .woocommerce-message{
@@ -1318,6 +1472,18 @@ color: #6B3232;
 
 table.shop_table .product-subtotal .amount{
  float: right;
+}
+
+table.shop_table .cart-subtotal .amount{
+ float: right;
+}
+
+table.shop_table .order-total .amount{
+ float: right;
+}
+
+table.shop_table .shipping_cost #shipping_cost{
+ float: right; margin-top: 0px; margin-bottom: 0px;
 }
 
 .woocommerce-page table.shop_table .actions .button{
@@ -1558,5 +1724,125 @@ Label the data
 	clear: left;
 	margin-bottom: 10px;
 	border:0;
+}
+}
+
+@media (max-width: 599px){
+.woocommerce-page table.shop_table td.product-total:before {
+	content: "TOTAL";
+}
+
+.woocommerce-page table.shop_table td.product-total {
+	padding-top: 6px;
+    border-bottom-width: 1px;
+    padding-bottom: 6px;
+    margin-bottom: 0px;
+    height: 42px;
+    padding-right: 10px;
+}
+table.shop_table .cart-subtotal td{
+    height: 40px;
+}
+
+table.shop_table .shipping_cost {
+    height: 70px;
+}
+
+table.shop_table .order-total td{
+    height: 40px;
+}
+
+table.shop_table.cart .product-thumbnail{
+    height: 160px;
+}
+
+table.shop_table.cart .product-subtotal{
+    height: 43px;
+}
+
+.golf-checkout-top-container{
+margin-bottom: 0px;
+width: auto;
+margin-left: 0px;
+margin-right: 0px;
+text-decoration: none;
+}
+
+}
+
+@media (max-width: 533px){	
+div.cart_totals  .golf-clear-cart{
+display:none !important;
+}
+
+.woocommerce-page .golf-checkout-top-container .golf-cart-continue img{
+  width: 35% !important;
+    margin-right: 1px !important;
+}
+
+.woocommerce-page .golf-checkout-top-container .golf-cart-checkout img{
+width: 35% !important;
+margin-right: 1px !important;
+}
+
+form#golf-clear-cart-form .golf-checkout-top-container .golf-clear-cart{
+display:initial;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 11px;
+}
+
+.golf-cart-sidebar{
+display:none;
+}
+
+.entry-content .woocommerce{
+width:100% !important;
+  padding-right: 0px !important;
+}
+}
+
+@media (min-width: 320px) and (max-width: 531px){
+.golf-checkout-top-container{
+text-align: center;
+float: none;
+}
+
+form#golf-clear-cart-form .golf-checkout-top-container .golf-clear-cart{
+padding-top: 1.5%;
+padding-bottom: 1.5%;
+font-size: 0.82em !important;
+border-radius: 0px;
+}
+
+.woocommerce-page .golf-checkout-top-container .golf-cart-continue img{
+width: 45% !important;
+margin-left: 10px !important;
+}	
+
+.woocommerce-page .golf-checkout-top-container .golf-cart-checkout img{
+width: 45% !important;
+margin-right: 1px !important;
+}
+
+.woocommerce-page .golf-checkout-top-container .golf-cart-checkout{
+padding-top: 10px;
+display: block;
+}
+.cart_totals  .golf-checkout-top-container .golf-cart-checkout{
+display: inline;
+}
+
+.cart_totals .golf-checkout-top-container .golf-cart-paypal img{
+width: 45% !important;
+padding-top: 10px;
+display: inline;
+}
+}
+
+@media (min-width: 400px) and (max-width: 414px) {
+form#golf-clear-cart-form .golf-checkout-top-container .golf-clear-cart{
+padding-left: 20px;
+padding-right: 20px;
 }
 }

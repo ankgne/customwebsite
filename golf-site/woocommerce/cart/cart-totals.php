@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<img style="margin-right:10px;" src="<?php echo get_site_url(); ?>/wp-content/themes/ekornes-child-golf/images/button_checkout.png" alt="Secure Checkoutg"></a>
 	<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
 	<input type="hidden" name="clear-cart" />
-</div>	
+	</div>	
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>
 

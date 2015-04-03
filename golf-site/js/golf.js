@@ -6,6 +6,19 @@ jQuery(document).ready(function($) {
 		$( 'form.login' ).slideDown(); //to always show the login form on checkout form
 		//$( 'div.shipping_address' ).slideDown();
 	});
+	
+		$( 'body' ).on( 'updated_checkout', function() { //trigger handler of event being generated from checkout.js of woocommerce
+			$( "div.golf-credit-card-review-order #payment.woocommerce-checkout-payment" ).prepend( "<h3 id='order_review_heading' class='golf-credit-card-review-order'>Payment Information</h3>" );
+			
+		});
+		
+		
+		$( 'body' ).on( 'checkout_error', function() { // handling of error on checkout page
+			$('form.login').hide();	
+			$('div.create-account.golf-credit-card').css('width', '100%');
+			$('.checkout').css('margin-top', '0px');
+		});
+
 		
 	// Credit card checkout Form handler
 	function GolfCreditCardFormHandler() {

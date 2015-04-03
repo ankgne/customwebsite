@@ -265,7 +265,7 @@ function woocommerce_button_proceed_to_checkout() {
 	$checkout_url = WC()->cart->get_checkout_url();
 	$checkout_url = add_query_arg( array('golf-payment-method' => 'paypal','_wpnonce' => $nonce), $checkout_url );
 	?>
-	<a class="checkout-button alt wc-forward" href="<?php echo $checkout_url; ?>"><img src="<?php echo get_site_url(); ?>/wp-content/themes/ekornes-child-golf/images/button_paypal_checkout.png" alt="Paypal Checkout"></a>
+	<a class="checkout-button alt wc-forward golf-cart-paypal" href="<?php echo $checkout_url; ?>"><img src="<?php echo get_site_url(); ?>/wp-content/themes/ekornes-child-golf/images/button_paypal_checkout.png" alt="Paypal Checkout"></a>
 	<?php
 }
 ?>
@@ -405,5 +405,24 @@ function custom_display_admin_order_meta_golf_cc($order){
     //echo '<p><strong>'.__('Card CVC').':</strong> ' . get_post_meta( $order->id, 'Card CVC', true ) . '</p>';
 	echo '<p class="form-field form-field-wide"><label for="card_cvc">Card Type:</label><input type="text" name="card_cvc" id="card_cvc"  value="' . get_post_meta( $order->id, 'Card Type', true ) . '"  readonly/></p></div>';
 	//echo '<p><strong>'.__('Card Type').':</strong> ' . get_post_meta( $order->id, 'Card Type', true ) . '</p>';
+}
+function woocommerce_login_form( $args = array() ) {
+
+    $defaults = array(
+		'message'  => '',
+		'redirect' => '',
+		'hidden'   => false
+		);
+
+    $args = wp_parse_args( $args, $defaults  );
+    if ( isset( $_GET['golf-payment-method'] ) && ("CC"===$_GET['golf-payment-method'])) {
+            wc_get_template( 'global/form-login-cc.php', $args );
+    }
+    elseif (isset( $_GET['golf-payment-method'] ) && ("paypal"===$_GET['golf-payment-method'])){
+            wc_get_template( 'global/form-login-paypal.php', $args );
+    }
+    else {
+            wc_get_template( 'global/form-login.php', $args );
+    }
 }
 ?>
