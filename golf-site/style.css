@@ -26,6 +26,10 @@ background-color: #C2AB95;
 border-top: 3px solid #C2AB95;
 }
 
+table.shop_table td.product-thumbnail{
+ width: 30%;
+}
+
 table.shop_table{
 padding-top: 0px;
 padding-right: 0px;
