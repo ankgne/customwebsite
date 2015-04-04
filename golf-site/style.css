@@ -14,6 +14,18 @@ Text Domain: templatemela
 
 @import url("../ekornes/style.css");
 
+a.button{
+border: 1px solid #C2AB95 !important;
+}
+
+.woocommerce-message:before, .jigoshop_message:before{
+background-color: #C2AB95;
+}
+
+.woocommerce-message, .jigoshop_message{
+border-top: 3px solid #C2AB95;
+}
+
 table.shop_table{
 padding-top: 0px;
 padding-right: 0px;

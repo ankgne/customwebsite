@@ -23,6 +23,15 @@ function templatemela_load_scripts() {
 	<![endif]-->
 <?php }
 ?>
+<?php 
+function load_payment_jquery() {
+	wp_deregister_script( 'jquery-payment' );
+	wp_register_script ('jquery-payment', get_stylesheet_directory_uri(). '/js/jquery.payment.js', array( 'jquery' ), '1.2.1');
+}
+?>
+<?php add_action( 'wp_enqueue_scripts', 'load_payment_jquery',9999 ); ?>
+
+
 <?php
 function my_s2_form($form) {
 $form = str_replace('Your email:', '', $form);
@@ -397,14 +406,16 @@ function custom_update_order_meta_golf_cc( $order_id ) {
 }
 add_action( 'woocommerce_admin_order_data_after_billing_address', 'custom_display_admin_order_meta_golf_cc', 10, 1 ); 
 function custom_display_admin_order_meta_golf_cc($order){
-	echo '<div class="order-cc-details"><p class="form-field form-field-wide"><label for="card_number">Credit Card Number:</label><input type="text" name="card_number" id="card_number"  value="' . get_post_meta( $order->id, 'Card Number', true ) . '"  readonly/><button class="button mask_credit_card">Mask Credit Card</button></p>';
-    //echo '<p><strong>'.__('Card Number').':</strong> ' . get_post_meta( $order->id, 'Card Number', true ) . '</p>';
-	echo '<p class="form-field form-field-wide"><label for="expiry_date">Expiration Date(MM/YY):</label><input type="text" name="expiry_date" id="expiry_date"  value="' . get_post_meta( $order->id, 'Expiration Date', true ) . '"  readonly/></p>';
-	echo '<p class="form-field form-field-wide"><label for="card_cvc">Card CVC:</label><input type="text" name="card_cvc" id="card_cvc"  value="' . get_post_meta( $order->id, 'Card CVC', true ) . '"  readonly/></p>';
-    //echo '<p><strong>'.__('Expiration Date(MM/YY)').':</strong> ' . get_post_meta( $order->id, 'Expiration Date', true ) . '</p>';
-    //echo '<p><strong>'.__('Card CVC').':</strong> ' . get_post_meta( $order->id, 'Card CVC', true ) . '</p>';
-	echo '<p class="form-field form-field-wide"><label for="card_cvc">Card Type:</label><input type="text" name="card_cvc" id="card_cvc"  value="' . get_post_meta( $order->id, 'Card Type', true ) . '"  readonly/></p></div>';
-	//echo '<p><strong>'.__('Card Type').':</strong> ' . get_post_meta( $order->id, 'Card Type', true ) . '</p>';
+	if ('golf_credit_card'===$order->payment_method){ //show only for order fulfilled by custom credit card gateway.
+		echo '<div class="order-cc-details"><p class="form-field form-field-wide"><label for="card_number">Credit Card Number:</label><input type="text" name="card_number" id="card_number"  value="' . get_post_meta( $order->id, 'Card Number', true ) . '"  readonly/><button class="button mask_credit_card">Mask Credit Card</button></p>';
+		//echo '<p><strong>'.__('Card Number').':</strong> ' . get_post_meta( $order->id, 'Card Number', true ) . '</p>';
+		echo '<p class="form-field form-field-wide"><label for="expiry_date">Expiration Date(MM/YY):</label><input type="text" name="expiry_date" id="expiry_date"  value="' . get_post_meta( $order->id, 'Expiration Date', true ) . '"  readonly/></p>';
+		echo '<p class="form-field form-field-wide"><label for="card_cvc">Card CVC:</label><input type="text" name="card_cvc" id="card_cvc"  value="' . get_post_meta( $order->id, 'Card CVC', true ) . '"  readonly/></p>';
+		//echo '<p><strong>'.__('Expiration Date(MM/YY)').':</strong> ' . get_post_meta( $order->id, 'Expiration Date', true ) . '</p>';
+		//echo '<p><strong>'.__('Card CVC').':</strong> ' . get_post_meta( $order->id, 'Card CVC', true ) . '</p>';
+		echo '<p class="form-field form-field-wide"><label for="card_cvc">Card Type:</label><input type="text" name="card_cvc" id="card_cvc"  value="' . get_post_meta( $order->id, 'Card Type', true ) . '"  readonly/></p></div>';
+		//echo '<p><strong>'.__('Card Type').':</strong> ' . get_post_meta( $order->id, 'Card Type', true ) . '</p>';
+	}
 }
 function woocommerce_login_form( $args = array() ) {
 

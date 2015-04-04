@@ -7,14 +7,19 @@ jQuery(document).ready(function($) {
 		//$( 'div.shipping_address' ).slideDown();
 	});
 	
+		if ($( "#login").length == 0){ // if login form does not exist on checkout page
+				$('.checkout').css('margin-top', '0px');
+		}
+		
 		$( 'body' ).on( 'updated_checkout', function() { //trigger handler of event being generated from checkout.js of woocommerce
 			$( "div.golf-credit-card-review-order #payment.woocommerce-checkout-payment" ).prepend( "<h3 id='order_review_heading' class='golf-credit-card-review-order'>Payment Information</h3>" );
-			
 		});
 		
 		
 		$( 'body' ).on( 'checkout_error', function() { // handling of error on checkout page
-			$('form.login').hide();	
+			
+			$('form.login.golf-credit-card').css('width', '100%');
+			$('form.login.golf-credit-card').css('float', 'none');
 			$('div.create-account.golf-credit-card').css('width', '100%');
 			$('.checkout').css('margin-top', '0px');
 		});
