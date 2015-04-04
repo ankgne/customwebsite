@@ -7,7 +7,7 @@ function templatemela_load_scripts() {
 	wp_enqueue_script( 'carousel-min', get_template_directory_uri() . '/js/carousel.min.js', array(), '', true);
 	wp_enqueue_script( 'megnor-min', get_template_directory_uri() . '/js/megnor.min.js', array(), '', true);
 	wp_enqueue_script( 'custom',  get_template_directory_uri() . '/js/custom.js', array(), '', true);
-	wp_enqueue_script( 'golf',  get_stylesheet_directory_uri() . '/js/golf.js', array(), '', true);
+	wp_enqueue_script( 'golf',  get_stylesheet_directory_uri() . '/js/golf.min.js', array(), '', true);
 	wp_enqueue_script( 'imagelink', get_template_directory_uri() . '/js/imagelink.js', array(), '', true);
 	wp_enqueue_script( 'jquery-formalize-min', get_template_directory_uri() . '/js/jquery.formalize.min.js', array(), '', true);
 	wp_enqueue_script( 'respond-min', get_template_directory_uri() . '/js/respond.min.js', array(), '', true);	
@@ -26,7 +26,7 @@ function templatemela_load_scripts() {
 <?php 
 function load_payment_jquery() {
 	wp_deregister_script( 'jquery-payment' );
-	wp_register_script ('jquery-payment', get_stylesheet_directory_uri(). '/js/jquery.payment.js', array( 'jquery' ), '1.2.1');
+	wp_register_script ('jquery-payment', get_stylesheet_directory_uri(). '/js/jquery.payment.min.js', array( 'jquery' ), '1.2.1');
 }
 ?>
 <?php add_action( 'wp_enqueue_scripts', 'load_payment_jquery',9999 ); ?>
